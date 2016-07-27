@@ -25,3 +25,5 @@ To use the compiled version of this module, see [How to control which streams ge
 
 ## License
 This code is distributed under the [Wowza Public License](https://github.com/WowzaMediaSystems/wse-plugin-transcodercontrol/blob/master/LICENSE.txt).
+
+![alt tag](http://wowzalogs.com/stats/githubimage.php?plugin=wse-plugin-transcodercontrol)
