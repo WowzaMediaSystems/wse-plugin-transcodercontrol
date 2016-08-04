@@ -18,6 +18,7 @@ public class TranscoderControl extends ModuleBase
 	private class Controller implements ILiveStreamTranscoderControl
 	{
 
+		@Override
 		public boolean isLiveStreamTranscode(String transcoder, IMediaStream stream)
 		{
 			if (stream.isTranscodeResult())
@@ -53,7 +54,7 @@ public class TranscoderControl extends ModuleBase
 
 	public static final String MODULE_NAME = "TranscoderControl";
 	public static final String PROP_NAME_PREFIX = "transcoderControl";
-	
+
 	private WMSLogger logger;
 	private String names = "*";
 	private boolean matchAllow = true;
@@ -62,7 +63,7 @@ public class TranscoderControl extends ModuleBase
 	public void onAppStart(IApplicationInstance appInstance)
 	{
 		logger = WMSLoggerFactory.getLoggerObj(appInstance);
-		
+
 		names = appInstance.getProperties().getPropertyStr(PROP_NAME_PREFIX + "Names", names);
 		matchAllow = appInstance.getProperties().getPropertyBoolean(PROP_NAME_PREFIX + "MatchAllow", matchAllow);
 		noMatchAllow = appInstance.getProperties().getPropertyBoolean(PROP_NAME_PREFIX + "NoMatchAllow", noMatchAllow);
