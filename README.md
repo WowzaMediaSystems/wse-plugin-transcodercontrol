@@ -9,8 +9,8 @@ Wowza Streaming Engine 4.0.0 or later is required.
 ## Usage
 This module provides the following functionality:
 
-* Whitelist which streams can be transcoded.
-* Blacklist which streams that should not be transcoded.
+* Allowlist which streams can be transcoded.
+* Blocklist which streams that should not be transcoded.
 * Use wildcard character for multiple streams.
 
 ## More resources
@@ -26,4 +26,4 @@ Wowza Media Systems™ provides developers with a platform to create streaming a
 [Wowza Media Systems, LLC](https://www.wowza.com/contact)
 
 ## License
-This code is distributed under the [Wowza Public License](https://github.com/WowzaMediaSystems/wse-plugin-transcodercontrol/blob/master/LICENSE.txt).
+This code is distributed under the [Wowza Public License](/LICENSE.txt).
